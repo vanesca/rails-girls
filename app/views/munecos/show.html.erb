@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @muneco.name %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @muneco.description %>
+</p>
+
+<p>
+  <strong>Costo:</strong>
+  <%= @muneco.cost %>
+</p>
+
+<p>
+  <strong>Foto:</strong>
+  <%=image_tag( @muneco.picture_url, :width => 100) if @muneco.picture.present?  %>
+</p>
+
+<%= link_to 'Edit', edit_muneco_path(@muneco) %> |
+<%= link_to 'Back', munecos_path %>

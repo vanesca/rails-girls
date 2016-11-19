@@ -1,0 +1,1 @@
+json.array! @munecos, partial: 'munecos/muneco', as: :muneco
